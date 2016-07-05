@@ -1,11 +1,3 @@
----
-title: Fragments Lab
-type: lab
-duration: "1:25"
-creator:
-    name: Drew Mahrt
-    city: NYC
----
 
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Fragments Lab
 
@@ -49,3 +41,8 @@ Create an app with the above requirements.
 
 - [Fragments](http://developer.android.com/guide/components/fragments.html)
 - [Tabs](http://developer.android.com/training/implementing-navigation/lateral.html)
+
+
+
+![Creative Commons Non-Commercial License](https://licensebuttons.net/l/by-nc/3.0/88x31.png) Released under the [Creative Commons Non-Commercial License](https://github.com/ga-adi/lab-boilerplate-repository/blob/master/LICENSE)
+ 
