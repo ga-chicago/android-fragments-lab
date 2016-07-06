@@ -29,16 +29,9 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
 
-        PhotoFragment newFragment = new PhotoFragment();
-        Bundle args = new Bundle();
-        //need help here
-
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
 
-        ft.replace(R.id.pager, newFragment);
-        ft.addToBackStack(null);
-//        ft.commit();
 
         PhotoFragment photo = new PhotoFragment();
         Bundle photoBundle = new Bundle();
@@ -46,25 +39,28 @@ public class MainActivity extends AppCompatActivity {
         photoBundle.putString("PHOTO", photoName);
         photo.setArguments(photoBundle);
         ft.add(R.id.pager, photo);
-//        ft.commit();
+        ft.addToBackStack(null);
+        ft.commit();
 
-
+        FragmentTransaction ftx = fm.beginTransaction();
         InfoFragment info = new InfoFragment();
         Bundle infoBundle = new Bundle();
         String infoName = getResources().getString(R.string.info_text);
         infoBundle.putString("INFO", infoName);
         info.setArguments(photoBundle);
-        ft.add(R.id.pager, info);
- //       ft.commit();
+        ftx.add(R.id.pager, info);
+        ftx.addToBackStack(null);
+        ftx.commit();
 
-
+        FragmentTransaction fty = fm.beginTransaction();
         ContactFragment contact = new ContactFragment();
         Bundle contactBundle = new Bundle();
         String contactName = getResources().getString(R.string.contact);
         contactBundle.putString("INFO", contactName);
         contact.setArguments(contactBundle);
-        ft.add(R.id.pager, contact);
-        ft.commit();
+        fty.add(R.id.pager, contact);
+        fty.addToBackStack(null);
+        fty.commit();
 
 
         final ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
