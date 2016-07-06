@@ -59,10 +59,7 @@ public class PhotoFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_photo, container, false);
-//        mPhotoName = (TextView) PhotoFragment.findViewById(R.id.pager);
-//        mPhotoName.setText(photoName);
-//
-//        return photoFrag;
+
 
     }
 

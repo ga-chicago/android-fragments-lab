@@ -1,5 +1,6 @@
 package ly.generalassemb.drewmahrt.userinfotabs;
 
+import android.app.Fragment;
 import android.content.res.Resources;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.FragmentManager;
@@ -12,8 +13,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
-
-
 
 
     @Override
@@ -32,22 +31,22 @@ public class MainActivity extends AppCompatActivity {
 
         PhotoFragment newFragment = new PhotoFragment();
         Bundle args = new Bundle();
-  //need help here
+        //need help here
 
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
 
-         ft.replace(R.id.pager,newFragment);
-         ft.addToBackStack(null);
-         ft.commit();
+        ft.replace(R.id.pager, newFragment);
+        ft.addToBackStack(null);
+//        ft.commit();
 
         PhotoFragment photo = new PhotoFragment();
         Bundle photoBundle = new Bundle();
         String photoName = getResources().getString(R.string.photo_text);
         photoBundle.putString("PHOTO", photoName);
         photo.setArguments(photoBundle);
-        ft.add(R.id.pager,photo);
-        ft.commit();
+        ft.add(R.id.pager, photo);
+//        ft.commit();
 
 
         InfoFragment info = new InfoFragment();
@@ -55,8 +54,8 @@ public class MainActivity extends AppCompatActivity {
         String infoName = getResources().getString(R.string.info_text);
         infoBundle.putString("INFO", infoName);
         info.setArguments(photoBundle);
-        ft.add(R.id.pager,info);
-        ft.commit();
+        ft.add(R.id.pager, info);
+ //       ft.commit();
 
 
         ContactFragment contact = new ContactFragment();
@@ -64,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         String contactName = getResources().getString(R.string.contact);
         contactBundle.putString("INFO", contactName);
         contact.setArguments(contactBundle);
-        ft.add(R.id.pager,contact);
+        ft.add(R.id.pager, contact);
         ft.commit();
 
 
@@ -77,22 +76,19 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
                 viewPager.setCurrentItem(tab.getPosition());
-                PhotoFragment photoFrag = (PhotoFragment);
-                InfoFragment infoFrag = (InfoFragment);
-                ContactFragment contactFrag = (ContactFragment);
-                getSupportFragmentManager().findFragmentById(R.id.pager);
             }
 
-            @Override
-            public void onTabUnselected(TabLayout.Tab tab) {
+                @Override
+                public void onTabUnselected (TabLayout.Tab tab){
 
-            }
+                }
 
-            @Override
-            public void onTabReselected(TabLayout.Tab tab) {
+                @Override
+                public void onTabReselected (TabLayout.Tab tab) {
 
-            }
+                }
+
         });
 
-    }   //end braces for onCreate method is here :)
+    }
 }
