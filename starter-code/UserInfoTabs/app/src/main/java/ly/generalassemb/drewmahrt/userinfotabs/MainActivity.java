@@ -1,5 +1,6 @@
 package ly.generalassemb.drewmahrt.userinfotabs;
 
+import android.content.res.Resources;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -31,41 +32,40 @@ public class MainActivity extends AppCompatActivity {
 
         PhotoFragment newFragment = new PhotoFragment();
         Bundle args = new Bundle();
-        //  args.putInt(PhotoFragment.newInstance(), tabLayout);
-        newFragment.setArguments(args);
+  //need help here
 
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
 
-        // ft.replace(R.id.tab_layout,newFragment);
-        // ft.addToBackStack(null);
-        // ft.commit();
+         ft.replace(R.id.pager,newFragment);
+         ft.addToBackStack(null);
+         ft.commit();
 
         PhotoFragment photo = new PhotoFragment();
         Bundle photoBundle = new Bundle();
         String photoName = getResources().getString(R.string.photo_text);
         photoBundle.putString("PHOTO", photoName);
         photo.setArguments(photoBundle);
-        ft.add(R.id.tab_layout,photo);
+        ft.add(R.id.pager,photo);
         ft.commit();
 
-        FragmentTransaction ftx = fm.beginTransaction();
+
         InfoFragment info = new InfoFragment();
         Bundle infoBundle = new Bundle();
         String infoName = getResources().getString(R.string.info_text);
         infoBundle.putString("INFO", infoName);
         info.setArguments(photoBundle);
-        ftx.add(R.id.tab_layout,info);
-        ftx.commit();
+        ft.add(R.id.pager,info);
+        ft.commit();
 
-        FragmentTransaction ftz = fm.beginTransaction();
+
         ContactFragment contact = new ContactFragment();
         Bundle contactBundle = new Bundle();
         String contactName = getResources().getString(R.string.contact);
         contactBundle.putString("INFO", contactName);
         contact.setArguments(contactBundle);
-        ftz.add(R.id.tab_layout,contact);
-        ftz.commit();
+        ft.add(R.id.pager,contact);
+        ft.commit();
 
 
         final ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
@@ -77,10 +77,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
                 viewPager.setCurrentItem(tab.getPosition());
-//                PhotoFragment photoFrag = (PhotoFragment);
-//                InfoFragment infoFrag = (InfoFragment);
-//                ContactFragment contactFrag = (ContactFragment);
-//                getSupportFragmentManager().findFragmentById(R.id.pager);
+                PhotoFragment photoFrag = (PhotoFragment);
+                InfoFragment infoFrag = (InfoFragment);
+                ContactFragment contactFrag = (ContactFragment);
+                getSupportFragmentManager().findFragmentById(R.id.pager);
             }
 
             @Override
