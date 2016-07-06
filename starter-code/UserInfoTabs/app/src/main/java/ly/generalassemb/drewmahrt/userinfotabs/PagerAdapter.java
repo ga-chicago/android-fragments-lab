@@ -1,12 +1,15 @@
 package ly.generalassemb.drewmahrt.userinfotabs;
 
 
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
 /**
  * Created by drewmahrt on 2/18/16.
+ *
+ * adapted by ANDREA KIM 7/5/16
  */
 public class PagerAdapter extends FragmentStatePagerAdapter {
     int mNumOfTabs;
@@ -21,12 +24,13 @@ public class PagerAdapter extends FragmentStatePagerAdapter {
 
         switch (position) {
             case 0:
-                PictureFragment tab1 = new PictureFragment();
+                PhotoFragment tab1 = new PhotoFragment();
                 return tab1;
             case 1:
-                //TODO: Add your second tab
+                InfoFragment tab2 = new InfoFragment();
+                return tab2;
             case 2:
-                //TODO: Add your third tab
+                ContactFragment tab3 = new ContactFragment();
                 return tab3;
             default:
                 return null;
