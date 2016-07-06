@@ -1,6 +1,15 @@
 <resources>
     <string name="app_name">UserInfoTabs</string>
+<string name="user_info_tabs">User Info Tabs</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment">Hello there!</string>
+    <string name="photo_text">Andrea Kim</string>
+    <string name="about_me_text">About Me</string>
+    <string name="contact">Contact Info</string>
+
+<string name="address_1">6014 N. Claremont</string>
+<string name="address_2">Chicago, IL 60659</string>
+<string name="email">andreaforanimals@gmail.com</string>
+<string name="info_text">GA Student | Android Developer | Animal Lover</string>
+
 </resources>

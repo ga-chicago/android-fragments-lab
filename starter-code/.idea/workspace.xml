@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8997e60d-448c-40dd-8c6d-d945d16ad47a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/starter-code/UserInfoTabs/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/starter-code/UserInfoTabs/app/src/main/java/ly/generalassemb/drewmahrt/userinfotabs/PagerAdapter.java" afterPath="$PROJECT_DIR$/starter-code/UserInfoTabs/app/src/main/java/ly/generalassemb/drewmahrt/userinfotabs/PagerAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/starter-code/UserInfoTabs/build.gradle" afterPath="$PROJECT_DIR$/starter-code/UserInfoTabs/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/starter-code/UserInfoTabs/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/starter-code/UserInfoTabs/gradle/wrapper/gradle-wrapper.properties" />
+    <list default="true" id="ff8f92ba-ebde-404b-8948-1fee40147d30" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UserInfoTabs/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.idea/workspace.xml" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UserInfoTabs/app/src/main/java/ly/generalassemb/drewmahrt/userinfotabs/PagerAdapter.java" afterPath="$PROJECT_DIR$/UserInfoTabs/app/src/main/java/ly/generalassemb/drewmahrt/userinfotabs/PagerAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UserInfoTabs/build.gradle" afterPath="$PROJECT_DIR$/UserInfoTabs/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UserInfoTabs/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/UserInfoTabs/gradle/wrapper/gradle-wrapper.properties" />
     </list>
-    <ignored path="android-fragments-lab.iws" />
+    <ignored path="starter-code.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,10 +23,10 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
-    <favorites_list name="android-fragments-lab" />
+    <favorites_list name="starter-code" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -39,7 +39,7 @@
     <option name="width" value="1008" />
     <option name="height" value="801" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -64,20 +64,24 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane" />
+      <pane id="Scratches" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="android-fragments-lab" />
+              <option name="myItemId" value="starter-code" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="starter-code" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.NonAndroidModuleNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -175,10 +179,10 @@
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8997e60d-448c-40dd-8c6d-d945d16ad47a" name="Default" comment="" />
-      <created>1467755186538</created>
+      <changelist id="ff8f92ba-ebde-404b-8948-1fee40147d30" name="Default" comment="" />
+      <created>1467755729824</created>
       <option name="number" value="Default" />
-      <updated>1467755186538</updated>
+      <updated>1467755729824</updated>
     </task>
     <servers />
   </component>
@@ -198,7 +202,7 @@
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24844721" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2536232" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
